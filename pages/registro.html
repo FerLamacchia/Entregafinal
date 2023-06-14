@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/favicon.png">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../font.css">
+    <title>REGISTRO</title>
+</head>
+
+<body>
+    <div class="contenedor_padre_registo">
+
+
+        <h1 id="arriba">Agencia de Viajes RECREARTE</h1>
+
+        <header class="header">
+
+
+            <a href="../index.html"><img src="../img/favicon.png" alt="logo" width="50px"></a>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="../index.html" target="_blank">Home</a></li>
+                    <li><a href="./nosotros.html" target="_blank">Nosotros</a></li>
+                    <li><a href="./destinos.html" target="_blank">Destinos</a></li>
+                    <li><a href="./registro.html" target="_blank">Registro</a></li>
+                    <li><a href="./iniciarsesion.html" target="_blank">Iniciar Sesión</a></li>
+
+
+                </ul>
+
+            </nav>
+        </header>
+
+        <form class="form_registro">
+
+
+            <fieldset>
+                <legend>
+                    REGISTRO
+                </legend>
+
+                <div>
+                    <label for="nombre">Nombre*</label>
+                    <input type="text" name="Nombre" placeholder="Nombre Completo" id="nombre" required>
+                </div>
+
+                <div>
+                    <label for="apellido">Apellido*</label>
+                    <input type="text" name="Apellido" placeholder="Apellido Completo" id="apellido" required>
+
+                </div>
+
+                <div>
+                    <label for="email">Email*</label>
+                    <input type="text" name="Email" id="email" placeholder="Escribe tu email" required>
+
+                </div>
+
+                <div>
+                    <label for="nacimiento">Nacimiento*</label>
+                    <input type="date" id="nacimiento" required>
+
+                </div>
+
+                <div>
+                    <label for="genero">Genero</label>
+                    <input type="text" name="Genero" placeholder="Hombre/Mujer/Otro">
+
+                </div>
+
+
+
+                <div>
+                    <label for="pais">País*</label>
+                    <select name="pais" id="pais">
+                        <option value="afg">AFGANISTÁN</option>
+                        <option value="alb">ALBANIA</option>
+                        <option value="ale">ALEMANIA</option>
+                        <option value="and">ANDORRA</option>
+                        <option value="ang">ANGOLA</option>
+                        <option value="ant">ANTIGUA Y BARBUDA</option>
+                        <option value="arab">ARABIA SAUDI</option>
+                        <option value="arg">ARGELIA</option>
+                        <option value="arge">ARGENTINA</option>
+                        <option value="arm">ARMENIA</option>
+                        <option value="aru">ARUBA</option>
+                        <option value="aus">AUSTRALIA</option>
+                        <option value="austr">AUSTRIA</option>
+                        <option value="aze">AZERBAIYAN</option>
+                        <option value="bah">BAHAMAS</option>
+                        <option value="bahr">BAHRÉIN</option>
+                        <option value="ban">BANGLADESH</option>
+                        <option value="bar">BARBADOS</option>
+                        <option value="bela">BELARRÚS</option>
+                        <option value="beli">BELICE</option>
+                        <option value="beni">BENÍN</option>
+                        <option value="bol">BOLIVIA</option>
+                        <option value="bosn">BOSNIA-HERZEGOVINA</option>
+                        <option value="bots">BOTSUANA</option>
+                        <option value="bra">BRASIL</option>
+                        <option value="bru">BRUNEI</option>
+                        <option value="bul">BULGARIA</option>
+                        <option value="burk">BURKINA FASO</option>
+                        <option value="bur">BURUNDI</option>
+                        <option value="but">BUTÁN</option>
+                        <option value="bel">BÉLGICA</option>
+                        <option value="cab">CABO VERDE</option>
+                        <option value="cam">CAMBOYA</option>
+                        <option value="came">CAMERÚN</option>
+                        <option value="can">CANADÁ</option>
+                        <option value="cat">CATAR</option>
+                        <option value="cha">CHAD</option>
+                        <option value="chi">CHILE</option>
+                        <option value="chin">CHINA</option>
+                        <option value="chip">CHIPRE</option>
+                        <option value="col">COLOMBIA</option>
+                        <option value="com">COMORAS</option>
+                        <option value="con">CONGO</option>
+                        <option value="conrepdem">CONGO.REP.DEMOCRATICA DEL</option>
+                        <option value="cor">COREA.REP DE</option>
+                        <option value="cost">COSTA RICA</option>
+                        <option value="cro">CROACIA</option>
+                        <option value="cub">CUBA</option>
+                        <option value="cur">CURAZAO</option>
+                        <option value="cote">CÔTE D'IVOIRE</option>
+                        <option value="din">DINAMARCA</option>
+                        <option value="dom">DOMINICA</option>
+                        <option value="ecu">ECUADOR</option>
+                        <option value="egi">EGIPTO</option>
+                        <option value="elsal">EL SALVADOR</option>
+                        <option value="emarabun">EMIRATOS ÁRABES UNIDOS</option>
+                        <option value="eri">ERITREA</option>
+                        <option value="esl">ESLOVAQUIA</option>
+                        <option value="eslo">ESLOVENIA</option>
+                        <option value="esp">ESPAÑA</option>
+                        <option value="estciuvat">ESTADO DE LA CIUDAD DEL VATICANO</option>
+                        <option value="estapal">ESTADO DE PALESTINA</option>
+                        <option value="estunid">ESTADOS UNIDOS</option>
+                        <option value="est">ESTONIA</option>
+                        <option value="esw">ESWATINI</option>
+                        <option value="eti">ETIOPÍA</option>
+                        <option value="fil">FILIPINAS</option>
+                        <option value="fin">FINLANDIA</option>
+                        <option value="fiy">FIYI</option>
+                        <option value="fra">FRANCIA</option>
+                        <option value="gab">GABÓN</option>
+                        <option value="gam">GAMBIA</option>
+                        <option value="geo">GEORGIA</option>
+                        <option value="gha">GHANA</option>
+                        <option value="gra">GRANADA</option>
+                        <option value="gre">GRECIA</option>
+                        <option value="gua">GUATEMALA</option>
+                        <option value="gui">GUINEA</option>
+                        <option value="guibis">GUINEA BISSAU</option>
+                        <option value="guiecu">GUINEA ECUATORIAL</option>
+                        <option value="guy">GUYANA</option>
+                        <option value="hai">HAITÍ</option>
+                        <option value="hon">HONDURAS</option>
+                        <option value="hun">HUNGRÍA</option>
+                        <option value="ind">INDIA</option>
+                        <option value="indo">INDONESIA</option>
+                        <option value="ira">IRAK</option>
+                        <option value="irl">IRLANDA</option>
+                        <option value="ir">IRÁN</option>
+                        <option value="isl">ISLANDIA</option>
+                        <option value="isr">ISRAEL</option>
+                        <option value="ita">ITALIA</option>
+                        <option value="jam">JAMAICA</option>
+                        <option value="jap">JAPÓN</option>
+                        <option value="jor">JORDANIA</option>
+                        <option value="kaz">KAZAJSTÁN</option>
+                        <option value="ken">KENIA</option>
+                        <option value="kir">KIRGUISTÁN</option>
+                        <option value="kiri">KIRIBATI</option>
+                        <option value="kuw">KUWAIT</option>
+                        <option value="lao">LAOS</option>
+                        <option value="les">LESOTO</option>
+                        <option value="let">LETONIA</option>
+                        <option value="lib">LIBERIA</option>
+                        <option value="libi">LIBIA</option>
+                        <option value="lie">LIECHTENSTEIN</option>
+                        <option value="lit">LITUANIA</option>
+                        <option value="lux">LUXEMBURGO</option>
+                        <option value="liba">LÍBANO</option>
+                        <option value="macdelnor">MACEDONIA DEL NORTE</option>
+                        <option value="mad">MADAGASCAR</option>
+                        <option value="mal">MALASIA</option>
+                        <option value="mala">MALAUI</option>
+                        <option value="mald">MALDIVAS</option>
+                        <option value="malt">MALTA</option>
+                        <option value="mali">MALÍ</option>
+                        <option value="mar">MARRUECOS</option>
+                        <option value="mars">MARSHALL.ISLAS</option>
+                        <option value="mau">MAURICIO</option>
+                        <option value="maurit">MAURITANIA</option>
+                        <option value="micro">MICRONESIA.ESDADOS FEDERADOS DE</option>
+                        <option value="mol">MOLDOVA</option>
+                        <option value="mon">MONGOLIA</option>
+                        <option value="mont">MONTENEGRO</option>
+                        <option value="moz">MOZAMBIQUE</option>
+                        <option value="mya">MYANMAR</option>
+                        <option value="mex">MÉXICO</option>
+                        <option value="mona">MÓNACO</option>
+                        <option value="nam">NAMIBIA</option>
+                        <option value="nau">NAURU</option>
+                        <option value="nep">NEPAL</option>
+                        <option value="nic">NICARAGUA</option>
+                        <option value="nig">NIGERIA</option>
+                        <option value="nor">NORUEGA</option>
+                        <option value="nuezel">NUEVA ZELANDA</option>
+                        <option value="nige">NÍGER</option>
+                        <option value="oma">OMÁN</option>
+                        <option value="pak">PAKISTÁN</option>
+                        <option value="pan">PANAMÁ</option>
+                        <option value="papnuegui">PAPÚA NUEVA GUINEA</option>
+                        <option value="par">PARAGUAY</option>
+                        <option value="paibaj">PAÍSES BAJOS</option>
+                        <option value="per">PERÚ</option>
+                        <option value="pol">POLONIA</option>
+                        <option value="port">PORTUGAL</option>
+                        <option value="reiuni">REINO UNIDO</option>
+                        <option value="repcenafri">REP.CENTROAFRICANA</option>
+                        <option value="repche">REP.CHECA</option>
+                        <option value="repdom">REP.DOMINICANA</option>
+                        <option value="rua">RUANDA</option>
+                        <option value="rum">RUMANIA</option>
+                        <option value="rus">RUSIA</option>
+                        <option value="salisl">SALOMÓN.ISLAS</option>
+                        <option value="sam">SAMOA</option>
+                        <option value="sancris">SAN CRISTÓBAL Y NIEVES</option>
+                        <option value="sanmar">SAN MARINO</option>
+                        <option value="sanmart">SAN MARTÍN</option>
+                        <option value="sanviygra">SAN VICENTE Y LAS GRANADINAS</option>
+                        <option value="santluc">SANTA LUCÍA</option>
+                        <option value="santomeyprin">SANTO TOMÉ Y PRÍNCIPE</option>
+                        <option value="sen">SENEGAL</option>
+                        <option value="serb">SERBIA</option>
+                        <option value="seyc">SEYCHELLES</option>
+                        <option value="sierr">SIERRA LEONE</option>
+                        <option value="sing">SINGAPUR</option>
+                        <option value="sir">SIRIA</option>
+                        <option value="soma">SOMALIA</option>
+                        <option value="sri">SRI LANKA</option>
+                        <option value="sudaf">SUDÁFRICA</option>
+                        <option value="sud">SUDÁN</option>
+                        <option value="suddelsur">SUDÁN DEL SUR</option>
+                        <option value="sue">SUECIA</option>
+                        <option value="sui">SUIZA</option>
+                        <option value="suri">SURINAM</option>
+                        <option value="tai">TAILANDIA</option>
+                        <option value="tan">TANZANIA</option>
+                        <option value="tayi">TAYIKISTÁN</option>
+                        <option value="timlest">TIMOR-LESTE</option>
+                        <option value="tog">TOGO</option>
+                        <option value="tong">TONGA</option>
+                        <option value="triytob">TRINIDAD Y TOBAGO</option>
+                        <option value="turk">TURKMENISTÁN</option>
+                        <option value="tun">TÚNEZ</option>
+                        <option value="turki">TÜRKIYE</option>
+                        <option value="ucr">UCRANIA</option>
+                        <option value="uga">UGANDA</option>
+                        <option value="uru">URUGUAY</option>
+                        <option value="uzbek">UZBEKISTÁN</option>
+                        <option value="van">VANUATU</option>
+                        <option value="venez">VENEZUELA</option>
+                        <option value="viet">VIETNAM</option>
+                        <option value="yem">YEMEN</option>
+                        <option value="yibu">YIBUTI</option>
+                        <option value="zamb">ZAMBIA</option>
+                        <option value="zimb">ZIMBABUE</option>
+
+                    </select>
+
+                </div>
+
+                <div>
+                    <label for="nombre de usurio">Nombre de Usuario</label>
+                    <input type="text" name="Nombre de Usuario" placeholder="Minimo de 8 caracteres">
+
+
+                </div>
+
+                <div>
+                    <label for="pass">Contraseña*</label>
+                    <input type="password"" name=" Pass" placeholder="Minimo de 8 caracteres" id="pass" required>
+
+                </div>
+
+
+                <div>
+                    Acepto el Acuerdo del Usuario y la Politica de Privacidad
+                    <input type="checkbox" name="politica de privacidad" value="1">
+
+                </div>
+
+                <div>
+                    Acepto recibir Noticias y Actualizaciones
+                    <input type="checkbox" name="noticias y actualizaciones" value="1">
+
+                </div>
+
+                <div>
+                    <label for="comentario">Dejanos tu cometario</label>
+                    <textarea name="comentario" id="" cols="20" rows="1"
+                        placeholder="Dejanos tu comentario"> </textarea>
+
+
+                </div>
+                <br>
+
+                <div>
+                    <input type="submit" value="Enviar Datos">
+                    <input type="reset" value="EliminarDatos">
+                </div>
+
+
+
+
+
+            </fieldset>
+
+
+
+
+
+
+
+        </form>
+
+        <footer class="footer_registro">
+            <a href="https://www.facebook.com/recreartetravels?mibextid=ZbWKwL" class="icon-facebook2"
+                target="_blank"></a>
+
+
+            <a href="https://instagram.com/recreartetravels?igshid=MzRlODBiNWFlZA==" class="icon-instagram"
+                target="_blank"></a>
+
+        </footer>
+
+
+    </div>
+
+</body>
+
+</html>

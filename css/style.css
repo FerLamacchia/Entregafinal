@@ -1,0 +1,570 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/*COLOR DE FONDO DE LAS PAGINAS*/
+body {
+    background-color: lightyellow;
+}
+
+
+
+
+/*
+.seccion3 {
+    padding-top: 100px;
+    text-align: center;
+}
+*/
+
+
+
+/*GRID*/
+
+/* ESTILOS DEL INDEX */
+
+
+.contenedor_padre_index {
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+        "tituloindex"
+        "cabecera"
+        "mainindex"
+        "footerindex"
+
+    ;
+
+}
+
+#arriba {
+
+    grid-area: tituloindex;
+}
+
+.cabecera {
+
+    grid-area: cabecera;
+}
+
+/*NAVBAR*/
+
+.header {
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+    margin: 10px;
+    background-color: grey;
+    gap: 10px;
+
+}
+
+.menu ul {
+
+    display: flex;
+    justify-content: space-between;
+    width: 360px;
+    font-size: 16px;
+    list-style: none;
+    text-align: center;
+    margin-top: 20px;
+
+
+
+}
+
+.menu ul li {
+
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+
+
+}
+
+.menu ul li:hover {
+
+    background-color: aqua;
+    border-radius: 30px;
+}
+
+.menu ul li a {
+
+    text-decoration: none;
+    color: black;
+}
+
+/*HASTSA ACA NARVBAR*/
+
+.main_index {
+
+    grid-area: mainindex;
+
+}
+
+.parrafo_masInfo {
+    text-align: center;
+}
+
+.parrafo_masInfo a {
+    text-decoration: none;
+    color: black;
+    background-color: burlywood;
+    border-radius: 5px;
+    width: 300px;
+
+}
+
+.letra1 {
+    font-family: 'EB Garamond', serif;
+    font-family: 'Ysabeau', sans-serif;
+
+}
+
+.icon-facebook2 {
+    text-decoration: none;
+}
+
+.icon-instagram {
+    text-decoration: none;
+}
+
+.icon-facebook2:before {
+    content: "\ea91";
+    color: grey;
+
+
+}
+
+.icon-instagram:before {
+    content: "\ea92";
+    color: grey;
+
+}
+
+
+
+.contenido {
+    color: white;
+    font-weight: 500;
+}
+
+
+.footer_index {
+    grid-area: footerindex;
+    background-color: #060405;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.seccion2 {
+    text-align: center;
+}
+
+
+
+@media only screen and (min-width:1280px) {
+
+
+    .seccion1 {
+        display: flex;
+        flex-direction: row;
+        text-align: right;
+        margin: 10px;
+        padding-bottom: 20px;
+        background-color: grey;
+        gap: 10px;
+    }
+
+    .parrafo_masInfo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+
+    }
+
+    .parrafo_masInfo p {
+        padding: 50px;
+
+
+    }
+
+
+
+    .parrafo_masInfo h2 {
+
+        padding-top: 25px;
+    }
+
+    .seccion2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 60px;
+        text-align: center;
+    }
+
+
+
+    .parrafo_masInfo a {
+        margin: auto
+    }
+
+
+
+
+}
+
+
+/* ESTILOS DE LA PAGINA DESTINOS */
+
+
+.contenedor_padre_destinos {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+        "tituloindex"
+        "cabecera"
+        "maindestinos"
+        "opcionesdefiltrado"
+        "footerdestinos"
+
+
+    ;
+
+}
+
+.main_destinos {
+    grid-area: maindestinos;
+
+}
+
+.contendor_Destino_Estaciones {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contedor_img_destinos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contedor_img_destinos img {
+
+    width: 100%;
+}
+
+
+.titulo_a {
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+    padding: 10px;
+
+}
+
+
+.titulo_b {
+    font-family: 'EB Garamond', serif;
+    font-family: 'Rubik Pixels', cursive;
+    text-align: center;
+    padding: 10px;
+}
+
+.lista_destinos {
+
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+
+.tablaPaquetes {
+    border: rgb(145, 50, 50) 5px solid;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.th_paquetes {
+    border: none;
+    padding-left: 130px;
+
+}
+
+.footer_destinos {
+
+    grid-area: footerdestinos;
+    background-color: #060405;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    text-align: center;
+
+}
+
+.OpcionesFiltrado{
+    grid-area: opcionesdefiltrado;
+    background-color: #f6f3f3;
+    color: #060405;
+    border-radius: 10px;
+    width: 600px; 
+    height: 250px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding: 40px;
+   text-align: center;
+    
+    
+   
+   }
+
+   .OpcionesFiltrado button{
+   
+    width: 100px;
+ }
+
+   
+   .filtrados{
+       display: flex;
+       justify-content: space-around;
+       flex-direction: row;
+       width: 400px;
+       height: 200px;
+       font-size: small;
+       margin: auto;
+   }
+   
+   .filtrados-mensajes{
+       display: flex;
+       justify-content: space-between;
+       flex-direction: row;
+       gap: 20px;
+   
+   }
+
+@media only screen and (min-width:1280px) {
+
+    .contendor_Destino_Estaciones {
+
+        flex-direction: column;
+
+    }
+
+    .contendor_Destino_Estaciones h2 {
+
+        text-align: center;
+        padding-bottom: 20px;
+
+
+    }
+
+    .contedor_img_destinos {
+
+        flex-direction: row;
+        gap: 50px;
+        margin-left: 120px;
+        width: 1000px;
+
+    }
+
+    .th_paquetes {
+        border: none;
+        padding-left: 190px;
+
+    }
+
+    .contedor_img_destinos img {
+
+        width: 50%;
+    }
+
+}
+
+
+
+/* ESTILOS DE LA PAGINA INICIARSESION */
+
+
+.contenedor_padre_iniciarSesion {
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+        "tituloindex"
+        "cabecera"
+        "forminiciarsesion"
+        "footeriniciarsesion"
+
+    ;
+
+
+
+}
+
+.form_iniciarSesion {
+
+    grid-area: forminiciarsesion;
+    width: 500px;
+    text-align: center;
+    margin-top: 100px;
+    padding-top: 50px;
+   
+}
+
+.footer_iniciarSesion {
+    grid-area: footeriniciarsesion;
+    background-color: #060405;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 400px;
+    text-align: center;
+    
+
+
+}
+
+@media only screen and (min-width:1280px) {
+    .form_iniciarSesion {
+
+        width: 600px;
+        padding-top: 100px;
+        
+        margin-left: 350px;
+    }
+
+}
+
+/* ESTILOS DE LA PAGINA NOSOTROS */
+
+
+.contenedor_padre_nosotros {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+
+        "tituloindex"
+        "cabecera"
+        "mainnosotros"
+        "footernosotros"
+
+    ;
+
+
+
+}
+
+.main_nosotros {
+    grid-area: mainnosotros;
+
+
+}
+
+.footer_nosotros {
+    grid-area: footernosotros;
+    background-color: #060405;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+
+.subtitulo_nosotros {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+
+.parrafo_nosotros {
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.img_nosotros {
+    text-align: center;
+ 
+}
+
+@media only screen and (min-width:1280px) {
+
+
+    .parrafo_nosotros {
+
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+
+
+
+
+
+}
+
+
+/* ESTILOS DE LA PAGINA REGISTRO */
+
+
+.contenedor_padre_registo {
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+        "tituloindex"
+        "cabecera"
+        "formregistro"
+        "footerregistro"
+
+    ;
+
+}
+
+.form_registro {
+    grid-area: formregistro;
+    text-align: center;
+    width: 300px;
+   margin: auto;
+}
+
+.footer_registro {
+    grid-area: footerregistro;
+    background-color: #060405;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 300px;
+    text-align: center;
+}
+
+
+@media only screen and (min-width:1280px) {
+    .form_registro {
+       margin: auto;
+       padding-top: 50px;
+        width:500px;
+    }
+
+
+}
